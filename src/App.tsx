@@ -1,10 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
+import cn from 'classnames'
+import { Link, BrowserRouter } from 'react-router-dom'
+import Header from './components/header';
+import SubHeader from './components/subHeader';
+import Events from './containers/events';
 
 function App() {
   return (
-    <div className="bg-blue-500">
-    </div>
+    <BrowserRouter>
+      <Header />
+      <SubHeader />
+      <Events />
+    </BrowserRouter>
+    
   );
 }
 
