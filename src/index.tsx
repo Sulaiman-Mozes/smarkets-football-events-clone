@@ -6,6 +6,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import configureStore from './store';
 
+
 const store = configureStore();
 
 ReactDOM.render(

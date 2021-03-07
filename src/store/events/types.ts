@@ -26,8 +26,12 @@ export interface Event {
     type: string
 }
 
-export interface EventResponsePayload {
-    events: Event[]
+export interface AllEventResponsePayload {
+  events: Event[]
+}
+
+export interface PopularEventResponsePayload {
+  popular_event_ids: string[]
 }
 
 export interface EventState {
@@ -35,14 +39,18 @@ export interface EventState {
     popularEvents: Event[]
 }
 
-interface GetAllEvents {
+interface SetAllEvents {
   type: typeof GET_ALL_EVENTS
-  payload: EventResponsePayload
+  payload: AllEventResponsePayload
 }
 
-interface GetPopularEvents {
+interface SetPopularEvents {
   type: typeof GET_POPULAR_EVENTS
-  payload: EventResponsePayload
+  payload: AllEventResponsePayload
 }
 
-export type EventActionTypes = GetAllEvents | GetPopularEvents
+export interface EventsRequestParams {
+    type: string
+}
+
+export type EventActionTypes = SetAllEvents | SetPopularEvents
