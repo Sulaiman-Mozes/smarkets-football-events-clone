@@ -1,17 +1,24 @@
-import React from 'react';
-import { BrowserRouter } from 'react-router-dom'
-import Header from './components/header';
-import Events from './containers/events';
-import EventDetails from './containers/event';
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Header from "./components/header";
+import Events from "./containers/events";
+import EventDetails from "./containers/event";
+import NotFound from "./components/notFound";
 
 function App() {
   return (
     <BrowserRouter>
       <Header />
-      <Events />
-      <EventDetails/>
+      <Switch>
+        <Route path="/" exact component={Events} />
+        <Route
+          path="/events/:eventId/"
+          exact
+          render={(props) => <EventDetails {...props} />}
+        />
+        <Route component={NotFound} />
+      </Switch>
     </BrowserRouter>
-    
   );
 }
 
