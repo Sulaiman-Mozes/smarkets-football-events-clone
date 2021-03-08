@@ -59,7 +59,9 @@ interface SubHeaderProps {
 const SubHeader: React.FC<SubHeaderProps> = ({ onChangeHandler }) => (
   <header className="bg-gray-200 shadow">
     <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex lg:justify-between md:justify-between flex-col">
-      <h1 className="text-xl uppercase font-bold text-gray-500 pa-1">Events</h1>
+      <h1 className="text-xl uppercase font-bold text-gray-500 pa-1">
+        Events Dashboard
+      </h1>
 
       <div className="inset-y-0 right-0 flex items-center lg:justify-between lg:mt-0 mt-3">
         <label

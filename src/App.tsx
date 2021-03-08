@@ -11,11 +11,7 @@ function App() {
       <Header />
       <Switch>
         <Route path="/" exact component={Events} />
-        <Route
-          path="/events/:eventId/"
-          exact
-          render={(props) => <EventDetails {...props} />}
-        />
+        <Route path="/events/:eventId/" exact component={EventDetails} />
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>

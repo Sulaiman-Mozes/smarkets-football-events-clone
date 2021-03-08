@@ -111,7 +111,7 @@ const PopularEvents: React.FC<PopularEventsProps> = ({
             </Link>
           ))
         ) : (
-          <div>No popular events available</div>
+          <p>No popular events available</p>
         )}
       </div>
     </div>

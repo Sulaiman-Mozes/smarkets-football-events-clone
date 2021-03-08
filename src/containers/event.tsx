@@ -4,16 +4,18 @@ import { getEventsByIds } from "../store/eventDetails/actions";
 import { RootState } from "../store/reducers";
 import { removeUnderScore } from "../utils/helpers";
 import Loader from "../components/loader";
-import { RouteComponentProps } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
-const EventDetails: React.FC<RouteComponentProps<any>> = ({ match }) => {
+interface ParamTypes {
+  eventId: string;
+}
+
+const EventDetails: React.FC = () => {
   const { isLoading, error, event } = useSelector(
     (store: RootState) => store.eventDetails
   );
 
-  const {
-    params: { eventId },
-  } = match;
+  const { eventId } = useParams<ParamTypes>();
 
   const dispatch = useDispatch();
 

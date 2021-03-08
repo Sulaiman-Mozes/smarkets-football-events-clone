@@ -104,7 +104,11 @@ const EventsTable: React.FC<EventTableProps> = ({
                     </tr>
                   ))
                 ) : (
-                  <div>No events available</div>
+                  <tr>
+                    <td>
+                      <p>No events available</p>
+                    </td>
+                  </tr>
                 )}
               </tbody>
             </table>
