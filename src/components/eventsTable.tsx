@@ -14,7 +14,10 @@ const EventsTable: React.FC<EventTableProps> = ({
     return (
       <div className="lg:w-3/4 w-full flex flex-col px-4 py-6">Loading ...</div>
     );
-  if (error) return <div>An error occured</div>;
+  if (error)
+    return (
+      <div className="lg:w-3/4 w-full flex flex-col px-4 py-6">{error}</div>
+    );
   return (
     <div className="lg:w-3/4 w-full flex flex-col px-4 py-6">
       <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">

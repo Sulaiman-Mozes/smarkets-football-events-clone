@@ -1,21 +1,21 @@
 # Smarkets Events Clone
 
 ### All Events
+
 ![image](https://user-images.githubusercontent.com/22395477/110297160-37d71880-8004-11eb-891b-204785765184.png)
 
-
 ### Single Event
-![image](https://user-images.githubusercontent.com/22395477/110297255-563d1400-8004-11eb-83b3-4e4c18eaa7ea.png)
 
+![image](https://user-images.githubusercontent.com/22395477/110297255-563d1400-8004-11eb-83b3-4e4c18eaa7ea.png)
 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Setup
- 
- - Add smarkets domain as `REACT_APP_SMARKETS_API_URL` environment variable
- - For Example `REACT_APP_SMARKETS_API_URL=https://api.smarkets.com/`
+
+- Add smarkets domain as `REACT_APP_SMARKETS_API_URL` environment variable
+- For Example `REACT_APP_SMARKETS_API_URL=https://api.smarkets.com/`
 
 ## Available Scripts
 

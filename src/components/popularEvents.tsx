@@ -41,7 +41,11 @@ const PopularEvents: React.FC<PopularEventsProps> = ({
     );
   }
   if (error) {
-    return <div>An error occured</div>;
+    return (
+      <div className="lg:w-1/4 w-full mx-4 my-6 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+        {error}
+      </div>
+    );
   }
   return (
     <div className="lg:w-1/4 w-full mx-4 my-6 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
